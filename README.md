@@ -66,111 +66,56 @@ Example of execution 2:
 
 ```
 Hello, welcome to the Stock Analyzer Assistant!
-Matching `stock_analyzer_assistant` assistant found, using the first matching assistant with ID:  asst_RUfI77g84JNHti6vsLwzYIIX
-Thread created with ID:  thread_JuImMJZuzLa56QlxCAgDfnXE
-Enter the prompt for the assistant: Retrieve the weekly time series data for the stock symbol 'MSFT' for the 3 months before July 2024. Visualize it in an image
-Run initiated with ID:  run_EeeTqpNGjYiv39vvSUX8T6Kb
-Waiting for response from `stock_analyzer_assistant` Assistant. Elapsed time: 2.14 seconds
-Tool call with ID and name: call_qXVcwgh5dlmWBKmiGyDlIJG5 polygon_api
-Done! Response received in 0.57 seconds.
-Run initiated with ID:  run_EeeTqpNGjYiv39vvSUX8T6Kb
-Waiting for response from `stock_analyzer_assistant` Assistant. Elapsed time: 24.43 seconds
-user: Retrieve the weekly time series data for the stock symbol 'MSFT' for the 3 months before July 2024. Visualize it in an image
-assistant: I have retrieved the weekly time series data for the stock symbol 'MSFT' for the 3 months before July 2024. Here are the results:
+No matching `stock_analyzer_assistant` assistant found, creating a new assistant with ID:  asst_ExF53i9wQVoMCrFk8VuNZiP3
+Thread created with ID:  thread_Wz5IcIqQ0rg69ejyagnyaBep
+Enter the prompt for the assistant: Retrieve the weekly time series data for the stock symbol 'MSFT' for the month of July 2024. Visualize it in an image
+Run initiated with ID:  run_Bn9uGrBwyuyzBAUuQ9K5XPo2
+Waiting for response from `stock_analyzer_assistant` Assistant. Elapsed time: 8.92 seconds
+Tool call with ID and name: call_gEwKb8yqKtA5wLPPbzupPN63 polygon_api
+Done! Response received in 0.73 seconds.
+Run initiated with ID:  run_Bn9uGrBwyuyzBAUuQ9K5XPo2
+Waiting for response from `stock_analyzer_assistant` Assistant. Elapsed time: 16.46 seconds
+user: Retrieve the weekly time series data for the stock symbol 'MSFT' for the month of July 2024. Visualize it in an image
+assistant: I have retrieved the weekly time series data for the stock symbol 'MSFT' for the month of July 2024. Here are the details of the data:
 
-- Week 1: 
-  - Open: $171.19
-  - Close: $169.58
-  - High: $171.92
-  - Low: $168.23
+1. Week of July 6, 2024:
+   - Open: 448.66
+   - Close: 467.56
+   - High: 468.35
+   - Low: 445.66
 
-- Week 2: 
-  - Open: $169.03
-  - Close: $176.55
-  - High: $178.36
-  - Low: $167.11
+2. Week of July 13, 2024:
+   - Open: 466.55
+   - Close: 453.55
+   - High: 467.7
+   - Low: 450.645
 
-- Week 3: 
-  - Open: $175.36
-  - Close: $165.00
-  - High: $176.63
-  - Low: $164.07
+3. Week of July 20, 2024:
+   - Open: 453.3
+   - Close: 437.11
+   - High: 457.26
+   - Low: 432
 
-- Week 4: 
-  - Open: $165.52
-  - Close: $169.30
-  - High: $171.34
-  - Low: $164.77
+4. Week of July 27, 2024:
+   - Open: 441.79
+   - Close: 425.27
+   - High: 448.39
+   - Low: 417.27
 
-- Week 5: 
-  - Open: $173.37
-  - Close: $183.38
-  - High: $187.00
-  - Low: $169.11
-
-- Week 6: 
-  - Open: $182.35
-  - Close: $183.05
-  - High: $185.09
-  - Low: $180.42
-
-- Week 7: 
-  - Open: $185.44
-  - Close: $189.87
-  - High: $191.09
-  - Low: $184.62
-
-- Week 8: 
-  - Open: $189.33
-  - Close: $189.98
-  - High: $192.82
-  - Low: $186.62
-
-- Week 9: 
-  - Open: $191.51
-  - Close: $192.25
-  - High: $193.00
-  - Low: $189.10
-
-- Week 10: 
-  - Open: $192.90
-  - Close: $196.89
-  - High: $196.94
-  - Low: $192.52
-
-- Week 11: 
-  - Open: $196.90
-  - Close: $212.49
-  - High: $220.20
-  - Low: $192.15
-
-- Week 12: 
-  - Open: $213.37
-  - Close: $207.49
-  - High: $218.95
-  - Low: $207.11
-
-- Week 13: 
-  - Open: $207.72
-  - Close: $210.62
-  - High: $216.07
-  - Low: $206.59
-
-- Week 14: 
-  - Open: $212.09
-  - Close: $226.34
-  - High: $226.45
-  - Low: $211.92
+5. Week of August 3, 2024:
+   - Open: 431.58
+   - Close: 408.49
+   - High: 432.15
+   - Low: 404.34
 
 I will now visualize this data in an image.
-assistant: file-Dw2dBEetwPx2zkRXwfIld3U5
+assistant: file-D6igY093tt0A7kOZQCHWBvTt
 ```
-![stock-image](https://github.com/user-attachments/assets/2391000b-69b9-4bf7-848e-8b5c8217d31b)
-
+![stock-image](https://github.com/user-attachments/assets/f32a4569-3d6b-4a4a-99fd-2b8bfd7de4aa)
 ```
-Step: step_NTx40vILquDW8hBE9kamlXLY
-Step: step_pXg0fGzvMSw0duxydUMzJrJS
-Step: step_SEhUtEFlRZLPWcmAsoZDLiv6
-Step: step_qhcl9N1GkytEu4Cd4uukjvOj
+Step: step_oulFZ3opLFUquZCKfCVfKKUP
+Step: step_cKE1PFsgYFdhAJlLDDHlVKMR
+Step: step_3vpLNs0VEO7N9WMCZCbOwFlK
+Step: step_E16wUh3dhyjN4ZcwTIyOIaxg
 ```
 
