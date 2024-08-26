@@ -66,16 +66,27 @@ Example of execution 2:
 
 ```
 Hello, welcome to the Stock Analyzer Assistant!
+
 No matching `stock_analyzer_assistant` assistant found, creating a new assistant with ID:  asst_ExF53i9wQVoMCrFk8VuNZiP3
+
 Thread created with ID:  thread_Wz5IcIqQ0rg69ejyagnyaBep
+
 Enter the prompt for the assistant: Retrieve the weekly time series data for the stock symbol 'MSFT' for the month of July 2024. Visualize it in an image
+
 Run initiated with ID:  run_Bn9uGrBwyuyzBAUuQ9K5XPo2
+
 Waiting for response from `stock_analyzer_assistant` Assistant. Elapsed time: 8.92 seconds
+
 Tool call with ID and name: call_gEwKb8yqKtA5wLPPbzupPN63 polygon_api
+
 Done! Response received in 0.73 seconds.
+
 Run initiated with ID:  run_Bn9uGrBwyuyzBAUuQ9K5XPo2
+
 Waiting for response from `stock_analyzer_assistant` Assistant. Elapsed time: 16.46 seconds
+
 user: Retrieve the weekly time series data for the stock symbol 'MSFT' for the month of July 2024. Visualize it in an image
+
 assistant: I have retrieved the weekly time series data for the stock symbol 'MSFT' for the month of July 2024. Here are the details of the data:
 
 1. Week of July 6, 2024:
