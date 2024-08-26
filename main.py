@@ -4,10 +4,9 @@ import requests
 import time
 
 
-def polygon_api(multiplier, timespan, from_date, to_date):
+def polygon_api(multiplier, timespan, from_date, to_date, symbol):
     with open("/Users/Natali/Documents/work/PycharmProjects/pythonProject1/polygon-key.key", "r") as f:
         stock_api = f.readline()
-        symbol='AAPL'
         api_url=f"https://api.polygon.io/v2/aggs/ticker/{symbol}/range/{multiplier}/{timespan}/{from_date}/{to_date}?apiKey={stock_api}"
         r = requests.get(api_url)
         return r.json()
@@ -28,7 +27,7 @@ class StockAnalyzer:
                 "type": "function",
                 "function": {
                     "name": "polygon_api",
-                    "description": "Retrieve and show the time series data for the stock symbol 'AAPL'.",
+                    "description": "Retrieve and show the time series data for the stock symbols.",
                     "parameters": {
                         "type": "object",
                         "properties": {
@@ -47,9 +46,13 @@ class StockAnalyzer:
                             "to_date": {
                                 "type": "string",
                                 "description": "The end of the aggregate time window. Either a date with the format YYYY-MM-DD or a millisecond timestamp."
-                            }
+                            },
+                            "symbol": {
+                                "type": "string",
+                                "description": "The stock symbol code."
+                            },
                         },
-                        "required": ["multiplier", "timespan", "from_date", "to_date"],
+                        "required": ["multiplier", "timespan", "from_date", "to_date", "symbol"],
                     },
                 },
             },
@@ -118,7 +121,8 @@ class StockAnalyzer:
                                      "output": str(function_to_call(multiplier=function_args.get("multiplier"),
                                                                     timespan=function_args.get("timespan"),
                                                                     from_date=function_args.get("from_date"),
-                                                                    to_date=function_args.get("to_date")
+                                                                    to_date=function_args.get("to_date"),
+                                                                    symbol=function_args.get("symbol")
                                                                     ))})
             print(f"Done! Response received in {round(time.time() - t, 2)} seconds.")
         self.run = self.client.beta.threads.runs.submit_tool_outputs(
