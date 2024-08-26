@@ -89,11 +89,11 @@ class StockAnalyzer:
         self.thread = self.client.beta.threads.create()
         print("Thread created with ID: ", self.thread.id)
 
-    def create_run(self):
+    def create_run(self, prompt):
         self.client.beta.threads.messages.create(
             thread_id=self.thread.id,
             role="user",
-            content="Retrieve and visualize the monthly time series data for the stock symbol 'AAPL' for the 3 months before June 2024. Visualize it in an image"
+            content=prompt
         )
 
         self.run = self.client.beta.threads.runs.create(
@@ -159,7 +159,7 @@ if __name__ == '__main__':
     s = StockAnalyzer()
     s.create_assistant()
     s.create_thread()
-    s.create_run()
+    s.create_run(input("Enter the prompt for the assistant: "))
     s.wait_on_run()
     s.function_calls()
     s.wait_on_run()
