@@ -4,8 +4,9 @@ It uses [OpenAI Assistants API](https://platform.openai.com/docs/assistants/over
 
 
 
-<b>Example of execution:</b>
+Example of execution:
 
+```
 Hello, welcome to the Stock Analyzer Assistant!
 
 Matching `stock_analyzer_assistant` assistant found, using the first matching assistant with ID:  asst_RUfI77g84JNHti6vsLwzYIIX
@@ -27,20 +28,19 @@ Waiting for response from `stock_analyzer_assistant` Assistant. Elapsed time: 5.
 user: Retrieve and visualize the monthly time series data for the stock symbol 'AAPL' for the 3 months before June 2024. Visualize it in an image
 
 assistant: The monthly time series data for the stock symbol 'AAPL' for the 3 months before June 2024 has been retrieved. Here are the details of the data:
-
 - March 2024: Close price = $171.48
-- April 2024: Close price = $170.33 
+- April 2024: Close price = $170.33
 - May 2024: Close price = $192.25
 - June 2024: Close price = $210.62
 
 Let's visualize this data in an image.
-
+```
 ![image](https://github.com/user-attachments/assets/ba8835d1-3401-4449-bd6c-64aa81e210c0)
-
+```
 Step: step_TyxwxXukw7Dkfb3O4aHF63Gp
-
 Step: step_01dXGxK9tjvhicOrIMC9UVzO
-
 Step: step_onE7QOdiN7LlnoOiv7T3vfB1
+```
+
 
 
