@@ -1,5 +1,5 @@
 This educational project is using OpenAI API and Polygon API to generate information about the stock price for sumbol 'AAPL'.
-It uses [OpenAI Assistants API](https://platform.openai.com/docs/assistants/overview) and [Function Calling](https://platform.openai.com/docs/guides/function-calling) so that OpenAI can use the data from Polygon API to produce the needed results.
+It uses [OpenAI Assistants API](https://platform.openai.com/docs/assistants/overview) and [Function Calling](https://platform.openai.com/docs/guides/function-calling) so that OpenAI can use the data from [Polygon API](https://polygon.io/) to produce the needed results.
 
 
 
